@@ -1,0 +1,122 @@
+<!DOCTYPE  html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Ejercicio 7</title>
+<link rel="stylesheet" href="Ejercicio7.css">
+</head>
+<body>
+<header>
+<h1>Gestion de la base de datos</h1>
+</header>
+
+<section class='calculadora'>
+<form action='#' method='post' name='clase' enctype='multipart/form-data'>
+<h2>Crear base de datos</h2>
+<input type='submit' class='button' name ='crearB' value='Crear'/>
+<h2>Crear las tablas</h2>
+<input type='submit' class='button' name ='crearT' value='Crear'/>
+<h2>Insertar un coche</h2>
+<p class='info'>Rellena los datos</p>
+<div>
+<label for='matricula'>Matricula:		</label> 
+<input type='text' id='matricula' name ='matricula'/>
+</div>
+
+<div>
+<label for='marca'>Marca:		</label> 
+<input type='text' id='marca' name ='marca'/>
+</div>
+
+<div>
+<label for='modelo'>Modelo:		</label> 
+<input type='text' id='modelo' name ='modelo'/>
+</div>
+
+<div>
+<label for='precioC'>Precio alquiler:		</label> 
+<input type='text' id='precioC' name ='precioC'/>
+</div>
+
+<input type='submit' class='button' name ='insertarCoche' value='Insertar'/>
+
+<h2>Insertar una Agencia</h2>
+<p class='info'>Rellena los datos</p>
+<div>
+<label for='id_agencia'>Identificador:		</label> 
+<input type='text' id='id_agencia' name ='id_agencia'/>
+</div>
+
+<div>
+<label for='nombre'>Nombre:		</label> 
+<input type='text' id='nombre' name ='nombre'/>
+</div>
+
+<div>
+<label for='precioA'>Precio:		</label> 
+<input type='text' id='precioA' name ='precioA'/>
+</div>
+
+<div>
+<label for='valoracion'>Valoracion [0-10]:		</label> 
+<input type='text' id='valoracion' name ='valoracion'/>
+</div>
+
+<input type='submit' class='button' name ='insertarAgencia' value='Insertar'/>
+
+<h2>Insertar un Alquiler</h2>
+<p class='info'>Rellena los datos</p>
+<div>
+<label for='id_agenciaA'>Identificado Agencia:		</label> 
+<input type='text' id='id_agenciaA' name ='id_agenciaA'/>
+</div>
+
+<div>
+<label for='matriculaA'>Matricula:		</label> 
+<input type='text' id='matriculaA' name ='matriculaA'/>
+</div>
+
+<div>
+<label for='dias'>Dias:		</label> 
+<input type='text' id='dias' name ='dias'/>
+</div>
+<input type='submit' class='button' name ='insertaAlquileres' value='Insertar'/>
+
+<h2>Busca un Coche</h2>
+<p class='info'>Rellena los datos</p>
+<div>
+<label for='matriculaB'>Matricula:		</label> 
+<input type='text' id='matriculaB' name ='matriculaB'/>
+</div>
+<input type='submit' class='button' name ='buscarCoche' value='Buscar'/>
+
+<h2>Busca una Agencia</h2>
+<p class='info'>Rellena los datos</p>
+<div>
+<label for='id_agenciaB'>Identificador:		</label> 
+<input type='text' id='id_agenciaB' name ='id_agenciaB'/>
+</div>
+<input type='submit' class='button' name ='buscarAgencias' value='Buscar'/>
+
+<h2>Busca un Alquiler</h2>
+<p class='info'>Rellena los datos</p>
+<div>
+<label for='id_agenciaBA'>Identificador:		</label> 
+<input type='text' id='id_agenciaBA' name ='id_agenciaBA'/>
+</div>
+<div>
+<label for='matriculaBA'>Matricula:		</label> 
+<input type='text' id='matriculaBA' name ='matriculaBA'/>
+</div>
+<input type='submit' class='button' name ='buscarAlquileres' value='Buscar'/>
+<h2>Exportar datos de la base de datos</h2>
+<input type='submit' class='button' name ='exportar' value='Exportar'/>
+
+<h2>Carga tus datos</h2>
+<label for='datos'>Selecciona tu archivo:		</label> 
+<input type="file" id="datos" name="datos" /> 
+<input type='submit' class='button' name ='cargar' value='Cargar'/>
+</form>
+</section>
+</body>
+</html>
